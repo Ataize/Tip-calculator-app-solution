@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    
+--strong-cyan: hsl(172, 67%, 45%);
+
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--dark-grayish-cyan: hsl(186, 14%, 43%);
+--grayish-cyan: hsl(184, 14%, 56%);
+--light-grayish-cyan: hsl(185, 41%, 84%);
+--very-light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--light-grayish-cyan);
+}   
+main{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.container{
+    background-color: white;
+    height: -webkit-fill-available;
+    border-radius: .6rem .6rem 0 0;
+    padding: 1rem;
+    
+}
+.container, .container-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container-input label, legend{
+    color: var(--grayish-cyan);
+    font-size: .8rem;
+    font-weight: bold;
+}
+.container-input div{
+    background-color: var(--very-light-grayish-cyan);
+    padding: .5rem;
+    border-radius: .6rem;
+}
+.container-input input{
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+    text-align: right;
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Very-dark-cyan);
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+fieldset label{
+    background-color: var(--Very-dark-cyan);
+    color: var(--very-light-grayish-cyan);
+    width: 130px;
+    padding: 10px;
+    margin-bottom: .5rem;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    border-radius: .5rem;
+}
+label:hover{
+    background-color: var(--light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
+    cursor: pointer;
+}
+::placeholder{
+    color: var(--Very-dark-cyan);
+}
+.checked{
+    background-color: var(--strong-cyan);
+}
+/* fieldset input{
+    appearance: none;
+} */
+.custom{
+    background-color: var(--very-light-grayish-cyan);
+}
+.custom input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: var(--very-light-grayish-cyan);
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.custom input::placeholder{
+    color: var(--grayish-cyan);
+}
+.box{
+    background-color: var(--Very-dark-cyan);
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.calculation-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+.calculation-box p {
+    color: var(--light-grayish-cyan);
+    font-size: .9rem;
+}
+.calculation-box small{
+    color: var(--dark-grayish-cyan);
+    font-weight: bold;
+}
+.calculation-box span{
+    color: var(--strong-cyan);
+    font-size: 1.3 rem;
+    font-weight:  bold;
+}
+.calculation-box img{
+    margin-right: 5px;
+    /* fill: var(--strong-cyan); */
+}
+.icon-dollar{
+    margin-right: 5px;
+}
+.icon-dollar path{
+    fill: var(--strong-cyan);
+}
+button{
+    background-color: var(--strong-cyan);
+    padding: .8rem;
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: var(--Very-dark-cyan);
+    font-size: 1rem;
+    font-weight: bold;
+}
+button:hover{
+    background-color: var(--light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
+    cursor: pointer;
+}
+@media screen and (min-width: 768px){
+    body{
+        display: flex;
+        height: 100vh;
+    }
+    main{
+       width: 80%;
+       height: auto;
+       margin: auto;
+    }
+    /* header{
+        padding: 2rem
+    } */
+    header img{
+        width: 100px;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2rem;
+        border-radius: .6rem;
+    }
+    .container-box{
+        padding-right: 1rem;
+    }
+    .container-input{
+        height: 100px;
+        justify-content: space-evenly;
+    }
+    .container-input label{
+        font-size: 1.3rem;
+    }
+    .container-input div{
+        padding: 1rem;
+    }
+    .container-input img{
+        width: 20px;
+    }
+    .container-input input {
+        font-size: 1.5rem;
+    }
+    .box{
+        width: 40%;
+        justify-content: space-evenly;
+        padding: 1rem 2rem;
+    }
+    fieldset{
+        justify-content: space-between;
+    }
+    fieldset label{
+        width: 150px;
+        font-size: 1rem;
+        /* margin-bottom: 1rem; */
+        margin: .6rem .6rem 1rem .6rem;
+    }
+    legend{
+        font-size: 1.2rem;
+    }
+    .calculation-box p{
+        font-size: 1.2rem;
+    }
+    .calculation-box span{
+        font-size: 2.3rem;
+    }
+    .calculation-box small{
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: 1.2rem;
+        height: 15%;
+    }
+    
+    
+    
+}
