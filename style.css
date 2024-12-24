@@ -93,12 +93,12 @@ label:hover{
 ::placeholder{
     color: var(--Very-dark-cyan);
 }
-.checked{
+.active{
     background-color: var(--strong-cyan);
 }
-/* fieldset input{
+fieldset input{
     appearance: none;
-} */
+}
 .custom{
     background-color: var(--very-light-grayish-cyan);
 }
@@ -106,7 +106,7 @@ label:hover{
     background-color: transparent;
     border: none;
     width: 100%;
-    color: var(--very-light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
     font-size: 1.1rem;
     text-align: center;
     font-weight: bold;
