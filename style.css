@@ -101,7 +101,13 @@ fieldset input{
 }
 .custom{
     background-color: var(--very-light-grayish-cyan);
+
 }
+#custom-selected, #custom-selected[input]{
+    background-color: var(--strong-cyan);
+    
+}
+
 .custom input{
     background-color: transparent;
     border: none;
